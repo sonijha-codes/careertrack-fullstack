@@ -221,3 +221,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Angular
+node_modules/
+.angular/
+dist/
+coverage/
+
+# Environment files
+.env.*
+!.env.example
