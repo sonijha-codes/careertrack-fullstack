@@ -1,0 +1,43 @@
+
+<section aria-labelledby="dashboard-heading">
+  <app-page-header
+    kicker="Overview"
+    title="Application progress"
+    actionLabel="Add application"
+  />
+
+  <div class="metrics-grid">
+    @for (metric of metrics; track metric.label) {
+      <app-stat-card
+        [label]="metric.label"
+        [icon]="metric.icon"
+        [accent]="metric.background"
+      />
+    }
+  </div>
+
+  <div class="charts-grid">
+    <app-content-card title="Applications by status">
+      <div class="chart-placeholder">
+        <span class="chart-symbol">Pie</span>
+        <span>Chart area</span>
+      </div>
+    </app-content-card>
+
+    <app-content-card title="Applications over time">
+      <div class="chart-placeholder">
+        <span class="chart-symbol">Line</span>
+        <span>Chart area</span>
+      </div>
+    </app-content-card>
+  </div>
+
+  <app-content-card title="Recent applications" linkLabel="View all">
+    <div class="empty-state">
+      <span class="empty-icon">0</span>
+      <h3>No applications yet</h3>
+      <p>Add your first job application to start tracking your search.</p>
+      <button type="button" class="primary-button">Add application</button>
+    </div>
+  </app-content-card>
+</section>

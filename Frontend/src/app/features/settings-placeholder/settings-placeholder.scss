@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+.placeholder-card {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(16, 24, 40, 0.04);
+}
+
+.placeholder-icon {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border-radius: 50%;
+  background: #f0f1ff;
+  color: #6366f1;
+  font-size: 22px;
+}
+
+.placeholder-card h2 {
+  margin: 14px 0 6px;
+  font-size: 20px;
+}
+
+.placeholder-card p {
+  color: #667085;
+}

@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #5b5fef;
+  --color-sidebar: #111827;
+  --color-sidebar-active: #252a3a;
+  --color-background: #f4f6fa;
+  --color-surface: #ffffff;
+  --color-border: #e7eaf0;
+  --color-text: #1f2937;
+  --color-text-muted: #667085;
+  --color-text-soft: #98a2b3;
+  --radius-card: 12px;
+  --shadow-card: 0 3px 12px rgba(16, 24, 40, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-background);
+  color: #1f2937;
+  font-family:
+    Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}

@@ -1,3 +1,1 @@
-import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+// Static UI layout; routes will be added with functional navigation.

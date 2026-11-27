@@ -1,0 +1,9 @@
+<article class="content-card">
+  <header class="card-header">
+    <h3>{{ title() }}</h3>
+    @if (linkLabel()) {
+      <span class="card-link">{{ linkLabel() }}</span>
+    }
+  </header>
+  <ng-content />
+</article>
